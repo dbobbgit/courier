@@ -1,0 +1,13 @@
+<h2>{{ posts }}</h2>
+
+<h1>Hello, Neighborhood</h1>
+
+<ul>
+	{% for foo in posts %}
+	<li>
+		<a href="/article/{{ foo.id }}/">{{ foo.title }}</a>
+		-- by
+		<a href="/author/{{ foo.author.id }}/">{{ foo.author.name }}</a>
+	</li>
+	{% endfor %}
+</ul>

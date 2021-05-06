@@ -1,0 +1,10 @@
+<p>{{ author }}</p>
+<p>{{author.byline}}</p>
+
+<ul>
+	{% for foo in posts %}
+	<li>
+		<a href="/article/{{ foo.id }}">{{ foo.title }}</a>
+	</li>
+	{% endfor %}
+</ul>
